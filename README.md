@@ -57,12 +57,14 @@ described below.
 
 The `data` folder contains:
 
--   The representative group consensus SC and group mean FC matrices for
-    healthy control data sets. The SC data was processed using
-    tractoflow and filtered using COMMIT2 (please refer to paper for
+-   The representative group-consensus SC and group-mean FC matrices for
+    healthy control data sets. The individual-level SC data was
+    processed using tractoflow and filtered using COMMIT2 prior to the
+    group-consensus matrix being computed (please refer to paper for
     details). The FC data was processed using fmriprep and denoised
     using AROMA, with and without Global Signal Regression (please refer
-    to paper for details).
+    to paper for details), prior to a group average matrix being
+    computed.
 
 -   The Deformation Based Morphometry (DBM) voxel-level contrast
     t-statistic maps for all contrasts. HC = Healthy control, PIPT =
@@ -70,7 +72,7 @@ The `data` folder contains:
     for details on processing).
 
 -   The atlases used (Schaefer 300 parcel, 7 network and Tian/Melbourne
-    atlas subcortical scale 2) for volume, SC and FC estimates.
+    atlas subcortical scale II) for volume, SC and FC estimates.
 
 Note: Due to data space restrictions the generated nulls are not
 included in this repository.
