@@ -1,14 +1,13 @@
 #Network Deformation Model 
 
 apply_LDM_all <- function(weight_by_sc = NULL, weight_by_fc = NULL, cor.type="spearman", scale.nulls = F){
-  setwd("~/Dropbox/Sid/R_files/STAGES_difussion/")
   source("scripts/functions/get_atrophy_t_vals_voxel.R")
   source("scripts/functions/get_mean_hc_connectome.R")
   source("scripts/functions/get_mean_hc_func_connectome.R")
   source("scripts/functions/get_node_distance.R")
   source("scripts/functions/apply_spin_nulls.R")
   source("scripts/run_LDM.R")
-  hc_connectome <- get_mean_hc_connectome(method = "traditionalConsistency", type = "001") #preserveDist #traditionalConsistency
+  hc_connectome <- get_mean_hc_connectome(method = "traditionalConsistency", type = "001") #type 001 = COMMIT2
   hc_connectome_w <- get_mean_hc_connectome(method = "average")
   hc_connectome <- as.matrix(hc_connectome*hc_connectome_w)
   hc_funconnectome <- get_mean_hc_func_connectome(GSR = F)

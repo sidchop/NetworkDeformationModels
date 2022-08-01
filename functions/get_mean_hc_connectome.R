@@ -1,6 +1,6 @@
 get_mean_hc_connectome <- function(type = "001", 
                                    method = "traditionalConsistency", 
-                                   sample="gencog",
+                                   sample="gencog", 
                                    age_match = TRUE) {
   
   if (sample == "stages") {
