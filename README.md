@@ -35,7 +35,9 @@ visualisation scripts:
     matrix and applies the Network Deformation Model (NDM). The function
     allows the model to optionally be unweighted or weighted by SC or
     FC. The function also computes p-values based on the three different
-    null models (connectome, spin and parameterised nulls).  
+    null models (connectome, spin and parameterised nulls). Note: Due to
+    data space restrictions the parameterised nulls are not included in
+    this repository.  
 
 <img src="readme_figures/figure1.jpg" width="80%" />
 
@@ -73,9 +75,6 @@ The `data` folder contains:
 
 -   The atlases used (Schaefer 300 parcel, 7 network and Tian/Melbourne
     atlas subcortical scale II) for volume, SC and FC estimates.
-
-Note: Due to data space restrictions the generated nulls are not
-included in this repository.
 
 ------------------------------------------------------------------------
 

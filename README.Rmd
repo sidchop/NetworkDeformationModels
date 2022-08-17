@@ -19,7 +19,7 @@ Different regions of the brain's grey matter are connected by a complex structur
 
 The `scripts` folder contains the three primary analysis and visualisation scripts:
 
--   `runNDM.R` begins with a function which takes in a vector of volume change values (or any statistic) for each region, a structural connectivity (SC) matrix, optionally a functional connectivity (FC) matrix and applies the Network Deformation Model (NDM). The function allows the model to optionally be unweighted or weighted by SC or FC. The function also computes p-values based on the three different null models (connectome, spin and parameterised nulls). \
+-   `runNDM.R` begins with a function which takes in a vector of volume change values (or any statistic) for each region, a structural connectivity (SC) matrix, optionally a functional connectivity (FC) matrix and applies the Network Deformation Model (NDM). The function allows the model to optionally be unweighted or weighted by SC or FC. The function also computes p-values based on the three different null models (connectome, spin and parameterised nulls). Note: Due to data space restrictions the parameterised nulls are not included in this repository. \
 
 ```{r, echo = FALSE,warning=F, error=F, out.width='80%'}
 knitr::include_graphics("readme_figures/figure1.jpg")
@@ -48,7 +48,7 @@ The `data` folder contains:
 
 -   The atlases used (Schaefer 300 parcel, 7 network and Tian/Melbourne atlas subcortical scale II) for volume, SC and FC estimates.
 
-Note: Due to data space restrictions the generated nulls are not included in this repository.
+
 
 ------------------------------------------------------------------------
 
